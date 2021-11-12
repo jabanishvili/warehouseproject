@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F44CE34-DD79-4565-90E6-1FA380DEFB75}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addcategoryform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addcategoryform.Designer.cs">
+      <DependentUpon>addcategoryform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addcostumerform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addcostumerform.Designer.cs">
+      <DependentUpon>addcostumerform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addorderform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addorderform.Designer.cs">
+      <DependentUpon>addorderform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addProductForm.Designer.cs">
+      <DependentUpon>addProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adduserform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adduserform.Designer.cs">
+      <DependentUpon>adduserform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="categoriesformss.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="categoriesformss.Designer.cs">
+      <DependentUpon>categoriesformss.cs</DependentUpon>
+    </Compile>
+    <Compile Include="costumerform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="costumerform.Designer.cs">
+      <DependentUpon>costumerform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="homeform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="homeform.Designer.cs">
+      <DependentUpon>homeform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginform.Designer.cs">
+      <DependentUpon>loginform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="orderform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orderform.Designer.cs">
+      <DependentUpon>orderform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="productform.Designer.cs">
+      <DependentUpon>productform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="userform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userform.Designer.cs">
+      <DependentUpon>userform.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addcategoryform.resx">
+      <DependentUpon>addcategoryform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addcostumerform.resx">
+      <DependentUpon>addcostumerform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addorderform.resx">
+      <DependentUpon>addorderform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addProductForm.resx">
+      <DependentUpon>addProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adduserform.resx">
+      <DependentUpon>adduserform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="categoriesformss.resx">
+      <DependentUpon>categoriesformss.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="costumerform.resx">
+      <DependentUpon>costumerform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="homeform.resx">
+      <DependentUpon>homeform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginform.resx">
+      <DependentUpon>loginform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="orderform.resx">
+      <DependentUpon>orderform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="productform.resx">
+      <DependentUpon>productform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="userform.resx">
+      <DependentUpon>userform.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping-cart-black-shape.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cargo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\options-lines.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-feedback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wrong.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
